@@ -1,0 +1,16 @@
+function factorial(n) {
+    // Edge case: Factorial of 0 is 1
+    if (n === 0) {
+        return 1;
+    }
+    
+    // Initialize result to 1
+    let result = 1;
+
+    // Use a for loop to multiply result by every integer from 1 up to n
+    for (let i = 1; i <= n; i++) {
+        result *= i; // Equivalent to: result = result * i;
+    }
+
+    return result;
+}
