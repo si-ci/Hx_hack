@@ -1,0 +1,15 @@
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+// Dynamically fetched or assigned target date values
+let targetDay = someDynamicDay;     // e.g., fetched from API, user input, or variable
+let targetMonth = someDynamicMonth;
+let targetYear = someDynamicYear;
+
+if (day === targetDay && month === targetMonth && year === targetYear) {
+    return true;
+} else {
+    return false;
+}
